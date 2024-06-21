@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import AdviseFetch from "./Components/AdviseFetch";
+import { AlertParent } from "./Components/AlertParent";
+import  CardComp  from "./Components/CardComp";
+import Cart from "./Components/Cart";
+import { PropandProptype } from "./Components/PropandProptype";
+import Qrcode from "./Components/Qrcode/Qrcode";
+import User from "./Components/User";
+import UserDetails from "./Components/UserDetails";
+
 
 function App() {
+
+  // let msg =() => {
+  //   alert('Gowtham')
+  // }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <PropandProptype color='yellow'/>
+      <AlertParent message={msg}/> */}
+      {/* <CardComp/> */}
+      {/* <Qrcode/> */}
+      {/* <Cart/> */}
+      {/* <UserDetails/> */}
+      {/* <User/> */}
+      <AdviseFetch/>
     </div>
   );
 }
